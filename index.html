@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف إنجاز المعلم: أ. عبدالله بن محمد حمدي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .teacher-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #2a5298;
+        }
+        
+        .info-text {
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #1e3c72;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #2a5298;
+        }
+        
+        h3 {
+            color: #2a5298;
+            margin: 20px 0 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #d0e1ff;
+            margin-bottom: 20px;
+        }
+        
+        .year-badge {
+            display: inline-block;
+            background-color: #ffc107;
+            color: #212529;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .strategies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .strategy-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #2a5298;
+        }
+        
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .strategy-icon {
+            font-size: 2.5rem;
+            color: #2a5298;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .project-showcase {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .project-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .detail-item {
+            background-color: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            border-right: 4px solid #2a5298;
+        }
+        
+        .evidence-section {
+            background-color: #e9f7fe;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            border-right: 5px solid #1e3c72;
+        }
+        
+        .file-link {
+            display: inline-block;
+            background-color: #2a5298;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .file-link:hover {
+            background-color: #1e3c72;
+        }
+        
+        .skills-list {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background-color: #e9ecef;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-right: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .strategies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .teacher-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="teacher-info">
+                <div class="avatar">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="info-text">
+                    <h1>أ. عبدالله بن محمد حمدي</h1>
+                    <p class="subtitle">معلم كيمياء متقدم تربوي | مبرمج مختص في HTML</p>
+                    <p>خبير في تطوير استراتيجيات التدريس الحديثة وتوظيف التقنية في العملية التعليمية</p>
+                    <div class="year-badge">عام ١٤٤٦ هـ</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="intro">
+            <h2>ملف الإنجاز المهني</h2>
+            <p>يضم هذا الملف توثيقاً للاستراتيجيات التدريسية المتنوعة التي تم تطبيقها خلال العام الدراسي 1446 هـ، مع التركيز على تمكين الطلاب من خلال التعلم النشط، والتقويم المتنوع، واستخدام الذكاء الاصطناعي والتقنيات الحديثة في تعلم مادة الكيمياء.</p>
+        </section>
+        
+        <section id="strategies">
+            <h2>استراتيجيات التدريس المطبقة</h2>
+            <div class="strategies-grid">
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>التعلم النشط التعاوني</h3>
+                    <p>تقسيم الطلاب إلى مجموعات عمل وتعيين أدوار مختلفة (باحث، مصمم أسئلة، مبرمج، مراجع، عارض) لبناء بنك أسئلة تفاعلي.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>التعلم بالمشاريع</h3>
+                    <p>تنفيذ مشروع "أفق" لإنشاء بنك أسئلة تفاعلي في مادة الكيمياء باستخدام HTML والذكاء الاصطناعي.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3>خرائط المفاهيم</h3>
+                    <p>استخدام الخرائط الذهنية والمفاهيمية لربط الأفكار وتنظيم المحتوى العلمي بطريقة مرئية.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>الاستفادة من الذكاء الاصطناعي</h3>
+                    <p>توظيف أدوات مثل ChatGPT وDeepSeek في توليد الأفكار وكتابة الأكواد البسيطة مع التأكيد على المراجعة العلمية.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>تحويل الدرس إلى أهداف</h3>
+                    <p>تحليل المحتوى التعليمي إلى أهداف سلوكية واضحة ومناقشتها مع الطلاب لضمان الفهم الشامل.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>التقويم المتنوع</h3>
+                    <p>استخدام برنامج التحسين الذي يشمل الملاحظة، المشاركة، النشاطات الصفية، الواجبات الأدائية، والاختبارات القصيرة.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="active-learning">
+            <div class="project-showcase">
+                <h2>مشروع "أفق": التعلم النشط في مادة الكيمياء</h2>
+                <p>مبادرة تعليمية تهدف إلى إشراك طلاب الصف الأول الثانوي في إعداد بنك أسئلة تفاعلي يعزز الفهم العميق ويجعل الطلاب شركاء في بناء المعرفة.</p>
+                
+                <div class="highlight">
+                    <i class="fas fa-quote-left"></i> فتح آفاق حديثة للتعلم التعاوني في مادة الكيمياء عبر إشراك الطلاب في إعداد بنك أسئلة تفاعلي يعزز الفهم العميق، ويجعل الطالب شريكاً فعالاً في بناء المعرفة.
+                </div>
+                
+                <div class="project-details">
+                    <div class="detail-item">
+                        <h4>المستهدفون</h4>
+                        <p>طلاب الصف الأول الثانوي</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>آلية التنفيذ</h4>
+                        <p>مجموعات تعاونية (6-7 طلاب)</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>الأدوار</h4>
+                        <p>باحث، مصمم أسئلة، مبرمج، مراجع، عارض</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>الأهداف</h4>
+                        <p>إنتاج بنك أسئلة تفاعلي بتقنية HTML</p>
+                    </div>
+                </div>
+                
+                <h3>مؤشرات الأداء:</h3>
+                <ul>
+                    <li>التزام جميع المجموعات بتسليم منتجاتها في المواعيد المحددة</li>
+                    <li>إنتاج بنك أسئلة رقمي يغطي وحدات المقرر بنسبة 100%</li>
+                    <li>تحسن مستوى الطلاب في الاختبارات الفصلية بنسبة لا تقل عن 20%</li>
+                    <li>مشاركة فعالة من قبل 90% من الطلاب في الأنشطة الجماعية</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="improvement-program">
+            <div class="project-showcase">
+                <h2>برنامج التحسين لمادة الكيمياء</h2>
+                <p>برنامج متنوع يهدف إلى رفع المستوى التحصيلي للطلاب من خلال أدوات تقويم متنوعة تراعي الفروق الفردية بين الطلاب.</p>
+                
+                <div class="project-details">
+                    <div class="detail-item">
+                        <h4>برنامج الملاحظة والمشاركة</h4>
+                        <p>بحث عن منتجات طبيعية تستخدم في الطب البديل وتوضيح المركب الكيميائي الفعال</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>برنامج النشاطات والتطبيقات الصفية</h4>
+                        <p>عمل خرائط مفاهيم لفصول الكتاب باستخدام برامج رقمية</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>برنامج الواجبات والمهام الأدائية</h4>
+                        <p>إنتاج مقاطع فيديو قصيرة لشرح مفردات الدرس</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>برنامج الاختبارات القصيرة</h4>
+                        <p>إعداد 30 سؤالاً تحصيلياً في مقرر الكيمياء</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="evidence">
+            <div class="evidence-section">
+                <h2>الشواهد والأدلة</h2>
+                <p>تم توثيق التجارب التعليمية من خلال الملفات التالية التي تقدم تفاصيل كاملة عن البرامج المطبقة:</p>
+                
+                <div class="highlight">
+                    <h3>ملفات توثيقية:</h3>
+                    <p>1. <strong>برنامج "أفق" للتعلم النشط:</strong> وثيقة مفصلة عن المبادرة وآليات تنفيذها (11 صفحة)</p>
+                    <p>2. <strong>برنامج التحسين لمادة الكيمياء:</strong> وثيقة تحتوي على أربعة برامج تحسين متنوعة (4 صفحات)</p>
+                </div>
+                
+                <p>هذه الوثائق تقدم دليلاً عملياً على تنوع استراتيجيات التدريس المطبقة ونجاحها في تحقيق الأهداف التعليمية.</p>
+                
+                <a href="#" class="file-link">
+                    <i class="fas fa-file-pdf"></i> عرض الوثائق التوثيقية
+                </a>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>المهارات التربوية والتقنية</h2>
+            <div class="skills-list">
+                <span class="skill-tag">تصميم وتنفيذ استراتيجيات التعلم النشط</span>
+                <span class="skill-tag">التعلم القائم على المشاريع</span>
+                <span class="skill-tag">تصميم صفحات HTML تفاعلية</span>
+                <span class="skill-tag">دمج الذكاء الاصطناعي في التعليم</span>
+                <span class="skill-tag">التقويم المتنوع والشامل</span>
+                <span class="skill-tag">إدارة المجموعات التعاونية</span>
+                <span class="skill-tag">تحليل المحتوى إلى أهداف تعليمية</span>
+                <span class="skill-tag">تصميم خرائط المفاهيم الرقمية</span>
+                <span class="skill-tag">تطوير بنوك الأسئلة التفاعلية</span>
+                <span class="skill-tag">مراعاة الفروق الفردية</span>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>ملف إنجاز المعلم: أ. عبدالله بن محمد حمدي | معلم كيمياء متقدم تربوي</p>
+            <p>جميع الحقوق محفوظة © 1446 هـ</p>
+        </div>
+    </footer>
+    
+    <script>
+        // إضافة تفاعلية بسيطة
+        document.addEventListener('DOMContentLoaded', function() {
+            const strategyCards = document.querySelectorAll('.strategy-card');
+            
+            strategyCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+            
+            // تأثير عند تحميل الصفحة
+            setTimeout(() => {
+                document.body.style.opacity = 1;
+            }, 100);
+            
+            document.body.style.opacity = 0;
+            document.body.style.transition = 'opacity 0.5s ease-in';
+        });
+    </script>
+</body>
+</html>
